@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Basic To-Do List</title>
+  <style>
+    body {
+      font-family: "Segoe UI", Arial, sans-serif;
+      background: linear-gradient(135deg, #74ebd5 0%, #ACB6E5 100%);
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      padding: 40px;
+      min-height: 100vh;
+    }
+
+    .todo-container {
+      background: #897df9;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+      width: 320px;
+      transition: transform 0.2s ease;
+    }
+    .todo-container:hover {
+      transform: translateY(-4px);
+    }
+    h2 {
+      text-align: center;
+      margin-bottom: 20px;
+      color: #333;
+      font-weight: 600;
+    }
+    ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+    li {
+      padding: 12px;
+      margin-bottom: 10px;
+      background: #f9f9f9;
+      border-radius: 8px;
+      display: flex;
+      align-items: center;
+      transition: background 0.2s ease;
+    
+    li:hover {
+      background: #eef2ff;
+    }
+    li.completed {
+      text-decoration: line-through;
+      color: #888;
+      background: #e6e6e6;
+    }
+    .checkbox {
+      margin-right: 10px;
+      accent-color: #6c63ff;
+    }
+  </style>
+</head>
+<body>
+  <div class="todo-container">
+    <h2>✨ My To-Do List ✨</h2>
+    <ul>
+      <li><input type="checkbox" class="checkbox"> Learn HTML</li>
+      <li><input type="checkbox" class="checkbox"> Practice CSS</li>
+      <li class="completed"><input type="checkbox" class="checkbox" checked> Build a To-Do List</li>
+    </ul>
+  </div>
+</body>
+</html>
